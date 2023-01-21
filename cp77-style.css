@@ -1,0 +1,153 @@
+html, body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url("./media/bg.png");
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main {
+    display: block;
+    margin: auto;
+    padding: 0;
+    width: 69%;
+    min-width: 1200px;
+    min-height: 100%;
+    background-color: rgba(255, 240, 1, 0.89);
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+}
+
+.main-title {
+    display: table-row;
+}
+.main-title .logo {
+    max-width: 50%;
+    display: table-cell;
+}
+.main-title h1 {
+    margin: 0;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5em;
+    padding-right: 10px;
+}
+
+.content {
+    text-align: left;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.category {
+    margin: auto;
+    width: 90%;
+}
+
+.category .category-title {
+    font-size: 2em;
+    padding-left: 50px;
+    border-bottom: 2px solid black;
+    position:
+}
+
+.category a{
+    display: block;
+    width: 100%;
+    color:black;
+    margin: 2px;
+}
+
+a:link {
+    opacity: 0.69;
+    text-decoration: none;
+}
+
+a:visited {
+    opacity: 0.69;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+a:active {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.category-table {
+    display: table-row;
+    width: 100%;
+    text-align:left;
+}
+
+.category-table img {
+    display: table-cell;
+    width: 200px;
+}
+
+.category-table a{
+    display: table-cell;
+    width: 0px;
+}
+
+.category-table a img {
+    height: 100%;
+    width: auto;
+}
+
+.category-table p {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.mod-name {
+    font-size: 2.5em;
+}
+
+.mod-item-container {
+    width:200px;
+    height:57.14px;
+    overflow: hidden;
+}
+
+.mod-item-container img {
+    position: relative;
+    margin-top: -27.625px;
+}
+
+.footer {
+    min-height: 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .main {
+        width: 100%;
+        min-height: 100%;
+        background-color: rgba(255, 240, 1, 0.89);
+        border: none;
+    }
+    
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .category {
+        width:  100%;
+    }
+}
